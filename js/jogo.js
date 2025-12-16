@@ -6,7 +6,7 @@ function iniciarJogo(){
     telaJogo.classList.remove("blur-fundo"); 
     cobra.vida=5;
     cobra.cor="yellow";
-    cobra.velocidade=2;
+    cobra.velocidade=1.5;
     trilha.tocar("ost")
     jogar();
     primeiroClique=true;
@@ -24,7 +24,7 @@ function jogar(){
         cobra.crescer();
         cobra.velocidade++;
         trilha.tocar("cobraComeu")
-        apple = new Apple(15);      
+        apple = new Apple(10);      
     }
     if (cobra.vida > 0){
         requestAnimationFrame(jogar);
