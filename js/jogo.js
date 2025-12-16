@@ -24,7 +24,7 @@ function jogar(){
         cobra.crescer();
         cobra.velocidade++;
         trilha.tocar("cobraComeu")
-        apple = new Apple(10);      
+        apple = new Apple(20);      
     }
     if (cobra.vida > 0){
         requestAnimationFrame(jogar);
@@ -44,7 +44,7 @@ function jogar(){
 }
 
 let trilha = new TrilhaSonora();
-let apple = new Apple(10);
+let apple = new Apple(20);
 placar.desenhar();
 tela.desenhar();
 
