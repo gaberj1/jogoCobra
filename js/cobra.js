@@ -1,9 +1,9 @@
 const cobra = {
     tamanho:10,
     comprimento:10,
-    taxaCrescimento:5,
-    velocidade:1,
-    cor: "white",
+    taxaCrescimento:10,
+    velocidade:5,
+    cor: "yellow",
     direcao:"direita",
     x:[180],
     y:[330],

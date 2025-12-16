@@ -7,7 +7,7 @@ function iniciarJogo(){
     cobra.vida=3;
     cobra.cor="white";
     cobra.velocidade=2;
-    trilha.tocar("jogandoJogo")
+    trilha.tocar("ost")
     jogar();
     primeiroClique=true;
    
@@ -33,7 +33,7 @@ function jogar(){
     {
         trilha.jogandoJogo.pause();
         trilha.jogandoJogo.currentTime=0;
-        trilha.tocar("fimJogo");
+        trilha.tocar("morreu");
         placar.desenhar()
         const telaInicial = document.getElementsByClassName('divCobra')[0];
         telaInicial.classList.remove("telaInvisivel");  
@@ -49,10 +49,10 @@ placar.desenhar();
 tela.desenhar();
 
 document.addEventListener("keydown",(evento) =>{  
-    if ((evento.key== "8") && (cobra.direcao=="direita"  || cobra.direcao=="esquerda"))   cobra.direcao="cima";      
-    if ((evento.key== "6") && (cobra.direcao=="cima"  || cobra.direcao=="baixo"))         cobra.direcao="direita";
-    if ((evento.key== "2") && (cobra.direcao=="direita"  || cobra.direcao=="esquerda"))   cobra.direcao="baixo";
-    if ((evento.key== "4") && (cobra.direcao=="cima"  || cobra.direcao=="baixo"))         cobra.direcao="esquerda";
+    if ((evento.key== "w") && (cobra.direcao=="direita"  || cobra.direcao=="esquerda"))   cobra.direcao="cima";      
+    if ((evento.key== "d") && (cobra.direcao=="cima"  || cobra.direcao=="baixo"))         cobra.direcao="direita";
+    if ((evento.key== "s") && (cobra.direcao=="direita"  || cobra.direcao=="esquerda"))   cobra.direcao="baixo";
+    if ((evento.key== "a") && (cobra.direcao=="cima"  || cobra.direcao=="baixo"))         cobra.direcao="esquerda";
 })
 
 document.addEventListener("click",(evento) =>{  

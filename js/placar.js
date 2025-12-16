@@ -1,10 +1,10 @@
 const placar = {
     largura:360,
     altura:30,
-    corFundo:"blue",
+    corFundo:"black",
     corTexto:"white",
     pontuacao:0,
-    nomeJogo:"Snake Game",
+    nomeJogo:"Jogo Snake",
     desenhar(){
         ctx.fillStyle = this.corFundo;
         ctx.fillRect(0,0,this.largura,this.altura);
