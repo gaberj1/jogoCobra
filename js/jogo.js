@@ -44,7 +44,7 @@ function jogar(){
 }
 
 let trilha = new TrilhaSonora();
-let apple = new Apple(30);
+let apple = new Apple(15);
 placar.desenhar();
 tela.desenhar();
 
@@ -70,4 +70,5 @@ document.addEventListener("click",(evento) =>{
     }
     primeiroClique=false;
 })
+
 
