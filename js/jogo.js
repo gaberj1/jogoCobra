@@ -6,7 +6,7 @@ function iniciarJogo(){
     telaJogo.classList.remove("blur-fundo"); 
     cobra.vida=5;
     cobra.cor="yellow";
-    cobra.velocidade=3;
+    cobra.velocidade=2;
     trilha.tocar("ost")
     jogar();
     primeiroClique=true;

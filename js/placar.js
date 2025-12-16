@@ -3,7 +3,7 @@ const placar = {
     altura:30,
     corFundo:"black",
     corTexto:"white",
-    pontuacao:15,
+    pontuacao:0,
     nomeJogo:"Jogo Snake",
     desenhar(){
         ctx.fillStyle = this.corFundo;
