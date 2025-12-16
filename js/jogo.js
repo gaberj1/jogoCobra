@@ -5,7 +5,7 @@ function iniciarJogo(){
     const telaJogo = document.getElementById('divJogo');
     telaJogo.classList.remove("blur-fundo"); 
     cobra.vida=3;
-    cobra.cor="white";
+    cobra.cor="yellow";
     cobra.velocidade=2;
     trilha.tocar("ost")
     jogar();
