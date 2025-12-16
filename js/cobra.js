@@ -2,7 +2,7 @@ const cobra = {
     tamanho:10,
     comprimento:10,
     taxaCrescimento:10,
-    velocidade:5,
+    velocidade:3,
     cor: "yellow",
     direcao:"direita",
     x:[180],
