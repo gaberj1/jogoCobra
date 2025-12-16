@@ -4,9 +4,9 @@ function iniciarJogo(){
     telaInicial.classList.add("telaInvisivel");    
     const telaJogo = document.getElementById('divJogo');
     telaJogo.classList.remove("blur-fundo"); 
-    cobra.vida=5;
+    cobra.vida=4;
     cobra.cor="yellow";
-    cobra.velocidade=1.5;
+    cobra.velocidade=1;
     trilha.tocar("ost")
     jogar();
     primeiroClique=true;
